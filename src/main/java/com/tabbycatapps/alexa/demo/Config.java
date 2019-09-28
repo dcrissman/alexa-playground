@@ -13,8 +13,8 @@ public class Config {
     @Bean
     public ServletRegistrationBean<SkillServlet> skillServletRegistrationBean() {
         return new ServletRegistrationBean<>(new SkillServlet(new CustomSkillBuilder()
-                .addRequestHandlers(
-                        new NextQuestionHandler()
+                .addRequestHandler(
+                        new HelloHandler()
                 )
                 .build()));
     }
