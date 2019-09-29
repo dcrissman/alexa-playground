@@ -18,7 +18,7 @@ public class HelloHandler implements RequestHandler {
 
     @Override
     public boolean canHandle(HandlerInput input) {
-        return input.matches(Predicates.intentName("NextQuestion"));
+        return input.matches(Predicates.intentName("Hello"));
     }
 
     @Override
