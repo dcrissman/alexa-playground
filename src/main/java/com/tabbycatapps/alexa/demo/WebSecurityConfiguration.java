@@ -18,8 +18,6 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
         http.csrf().disable();
         http.httpBasic().disable();
         http.anonymous().disable();
-
-        http.x509().
     }
 
 }
